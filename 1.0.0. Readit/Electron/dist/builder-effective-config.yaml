@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: .
+appId: com.stackacademy.readit
+mac:
+  publish:
+    - github
+  category: public.app-category.productivity
+win:
+  publish:
+    - github
+  certificateFile: private/praveen.pfx
+  verifyUpdateCodeSignature: false
+  publisherName: praveen
+linux:
+  publish:
+    - github
+  category: Network
+electronVersion: 4.1.3
