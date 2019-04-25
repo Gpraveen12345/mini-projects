@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="sample.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-signin-client_id" content="1058765827259-39rmaugpgos3dverc5manon2a2tr9uk0.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+<script src="sample.js">
+
+	</script>
+	
+</head>
+<body>
+
+<div id="header">
+	<div id="container">
+		<div id="ribbon"> 
+		<ul>
+		<li><button id="bold" title="Bold"><h2><b>B</b></h2></button></li>
+		<li><button id="italy" title="italy"><h2><em>I</em></h2></button><li>
+		<li><button id="sup" title="sup"><h2>x<sup>2</sup></h2></button></li>
+		<li><button id="sub" title="sub"><h2>x<sub>2</sub></h2></button></li>
+		<li><button id="strike" title="strike"><h2><s>abc</s><h2></button></li>
+	<li><select id="fontchanger">
+		<option value="Times New Roman"><h3>Times New Roman</h3></option>
+		<option value="consolas"><h2>consolas</h2></option>
+		<option value="Tahoma"><h2>Tahoma</h2></option>
+		<option value="monospace"><h2>monospace</h2></option>
+		<option value="cursive"><h2>cursive</h2></option>
+		<option value="sans-serif"><h2>sans-serif<h2></option>
+		<option value="calibri"><h2>calibri</h2></option>  
+</select></li>
+<li><select id="fontsize">
+	<script>
+		for(var i=1;i<15;i++)
+		{
+		document.write("<option value='"+i+"'>"+i+"</option>"); 
+		}
+	</script>
+</select></li>
+<li><button id="underline"><img src="C:\Users\pganesh\Desktop\mini-project\underline.png"></button></li>
+ <li><button id="jfr" 	><img src="C:\Users\pganesh\Desktop\mini-project\align-right-filled.png"></button></li>
+ 
+  <li><button id="jfl" ><img src="C:\Users\pganesh\Desktop\mini-project\align-left-filled.png"></button></li>
+ <li><button id="jfc" ><img src="C:\Users\pganesh\Desktop\mini-project\align-center-filled.png"></button></li>
+ <li><button id="jf" ><img src="C:\Users\pganesh\Desktop\mini-project\align-justify-filled.png"></button></li>
+		<li><input type="file" id="myFile"></li>
+		<li><a href="https://accounts.google.com/Login" class="fa fa-google"></a><li>
+		
+	<li><button  id="click" onclick="Export2Doc('data')"><h2>save</h2></button></li>
+	<!-- <li> <button id="download" onclick="download()"></button></li></ul>-->
+		 
+		
+
+		</div>
+	</div>
+</div>
+<script>
+	
+</script>
+
+<div id="container">
+<hr/>
+			<div id="content">
+				<iframe id="data" name="data" framebroder="0"></iframe>
+			</div>
+</div>
+<script>
+		var fonts = document.querySelectorAll("select#fontchanger > option");
+		for(var i=0;i < fonts.length;i++)
+		{
+		fonts[i].style.fontFamily=fonts[i].value;
+		}
+</script>
+
+
+</body>
+</html>

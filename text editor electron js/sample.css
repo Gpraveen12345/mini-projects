@@ -1,0 +1,83 @@
+*{
+	margin:0px;}
+body
+{
+	background:gray;
+	width:100%;
+	margin:auto;
+}
+#header
+{
+	background:gray;
+}
+#fontchanger
+{
+	font-size:15px;
+}
+#fontsize
+{
+	font-size:15px;
+}
+#ribbon
+{
+	background:brown;
+	width:100%;
+	border-bottom-color:gray;
+	height:70px;
+}
+ui
+{
+	list:none;
+	padding:0;
+}
+li{
+	list-style:none;
+	display:inline;
+	cursor:pointer;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  width:20px;
+  height:20px;
+}
+img
+{
+	margin-top:15px;
+	width:30px;
+	height:30px;
+}
+#container
+{
+	background:white;
+	width:960px;
+	border:none;
+	margin: 0 auto;
+}
+#content{
+	width:900vm;
+	border:none;
+	height:650vm;
+}
+#data{
+height:95%;
+font-size:20px;
+border:none;
+width:100%;
+}
+#ribbon li >button{
+color:white;
+border:none;
+background-color:brown;
+}
+#ribbon li>button:hover{
+	cursor:pointer;
+background-color:gray;
+transition: all 0.3s linear 0s;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
